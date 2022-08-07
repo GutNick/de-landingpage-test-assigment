@@ -44,7 +44,7 @@
 .job-offer{display:flex;margin:91px auto 96px;max-width:940px;width:100%;z-index:1}@media (max-width:1120px){.job-offer{justify-content:center}}
 .job-offer__content{align-items:center;display:flex;justify-content:space-between;max-width:860px}@media (max-width:1120px){.job-offer__content{flex-direction:column}}
 .job-offer__information{margin-right:180px}@media (max-width:1120px){.job-offer__information{margin:0 0 40px}}
-.job-offer__title{color:#fff;font-size:36px;font-weight:700;letter-spacing:.05em;line-height:46px;margin:0 0 32px;max-width:320px}@media (max-width:1120px){.job-offer__title{margin:0 auto 32px;text-align:center}}@media (max-width:768px){.job-offer__title{padding:0 20px}}
+.job-offer__title{color:#fff;font-size:36px;font-weight:700;letter-spacing:.05em;line-height:46px;margin:0 0 32px;max-width:335px}@media (max-width:1120px){.job-offer__title{margin:0 auto 32px;text-align:center}}@media (max-width:768px){.job-offer__title{padding:0 20px}}
 .job-offer__description{color:#fff;font-size:16px;letter-spacing:.05em;line-height:26px;margin:0;max-width:460px;opacity:.6}@media (max-width:768px){.job-offer__description{padding:0 20px}}
 
 .footer__bottom-content{display:flex;margin:96px auto 64px;max-width:940px;width:100%;z-index:1}@media (max-width:1120px){.footer__bottom-content{flex-direction:column;margin:96px auto 34px;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}}
