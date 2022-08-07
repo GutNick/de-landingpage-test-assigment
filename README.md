@@ -9,7 +9,7 @@
 
 ## Urls
 
-[Demo](https://www.figma.com/file/PIsFSnRdbH3UbiKyluclzh/de-landingpage)
+[Demo](https://gutnick.github.io/de-landingpage-test-assigment/)
 
 [Template](https://www.figma.com/file/PIsFSnRdbH3UbiKyluclzh/de-landingpage)
 
