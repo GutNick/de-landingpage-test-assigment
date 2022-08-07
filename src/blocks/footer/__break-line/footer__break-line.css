@@ -1,0 +1,19 @@
+.footer__break-line {
+    border-top: 1px solid #fff;
+    width: calc(50% + 390px);
+    z-index: 1;
+    opacity: 0.4;
+    align-self: flex-start;
+}
+
+@media (max-width: 1120px) {
+    .footer__break-line {
+        width: calc(100% - 96px);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__break-line {
+        width: 100%;
+    }
+}

@@ -1,0 +1,12 @@
+.job-offer__content {
+    max-width: 860px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1120px) {
+    .job-offer__content {
+        flex-direction: column;
+    }
+}

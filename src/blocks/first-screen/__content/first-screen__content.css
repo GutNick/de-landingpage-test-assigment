@@ -1,0 +1,6 @@
+.first-screen__content {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    overflow: hidden;
+}

@@ -1,0 +1,15 @@
+.header__menu {
+    width: 100%;
+    max-width: 1200px;
+    height: 48px;
+    margin: 40px 83px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .header__menu {
+        margin: 20px 20px 0;
+    }
+}

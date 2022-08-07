@@ -1,0 +1,27 @@
+.clients__logos-list {
+    width: 100%;
+    max-width: 940px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 233px);
+    gap: 1px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+@media (max-width: 1120px) {
+    .clients__logos-list {
+        width: fit-content;
+        max-width: 500px;
+        grid-template-columns: repeat(auto-fit, 233px);
+        gap: 1px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .clients__logos-list {
+        max-width: 100vw;
+    }
+}

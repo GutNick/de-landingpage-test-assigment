@@ -1,0 +1,12 @@
+.clients__logo {
+    font-size: 20px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 126px;
+    background-color: #5A98D0;
+    position: relative;
+}

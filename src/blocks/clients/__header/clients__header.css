@@ -1,0 +1,11 @@
+.clients__header {
+    display: flex;
+    margin-bottom: 111px;
+}
+
+@media (max-width: 1120px) {
+    .clients__header {
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+}

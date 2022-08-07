@@ -1,0 +1,13 @@
+.job-offer {
+    width: 100%;
+    max-width: 940px;
+    display: flex;
+    z-index: 1;
+    margin: 91px auto 96px;
+}
+
+@media (max-width: 1120px) {
+    .job-offer {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,10 @@
+.card__link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}

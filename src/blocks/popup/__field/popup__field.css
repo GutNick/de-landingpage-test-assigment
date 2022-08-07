@@ -1,0 +1,14 @@
+.popup__field {
+    padding: 21px 36px;
+    border: 1px solid rgba(53, 110, 173, .4);
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+}
+
+.popup__field::placeholder {
+    color: #1F3F68;
+    opacity: 0.2;
+}

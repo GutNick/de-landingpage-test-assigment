@@ -1,0 +1,12 @@
+.hww__items-column {
+    display: grid;
+    align-items: center;
+    row-gap: 100px;
+}
+
+@media (max-width: 1120px) {
+    .hww__items-column {
+        max-width: 380px;
+        row-gap: unset;
+    }
+}

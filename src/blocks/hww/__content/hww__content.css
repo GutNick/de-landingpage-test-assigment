@@ -1,0 +1,24 @@
+.hww__content {
+    max-width: 940px;
+    width: 100%;
+    margin: 192px auto 212px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 380px);
+    justify-content: right;
+    position: relative;
+    column-gap: 100px;
+}
+
+@media (max-width: 1120px) {
+    .hww__content {
+        justify-items: center;
+        grid-template-columns: 1fr;
+        margin: 192px auto 112px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hww__content {
+        margin: 92px auto 12px;
+    }
+}

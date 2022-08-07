@@ -1,0 +1,9 @@
+.header__burger {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background-image: url("../../../images/burger-icon.svg");
+    border: none;
+    background-position: center;
+    background-color: unset;
+}

@@ -1,0 +1,9 @@
+.contacts {
+    margin-right: 101px;
+}
+
+@media (max-width: 1120px) {
+    .contacts {
+        margin: 0 0 30px;
+    }
+}

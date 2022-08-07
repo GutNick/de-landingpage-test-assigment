@@ -1,0 +1,9 @@
+.footer__column {
+    margin-right: 77px;
+}
+
+@media (max-width: 1120px) {
+    .footer__column {
+        margin: 0 0 30px;
+    }
+}

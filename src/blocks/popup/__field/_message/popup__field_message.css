@@ -1,0 +1,5 @@
+.popup__field_message {
+    resize: none;
+    height: 144px;
+    box-sizing: border-box;
+}

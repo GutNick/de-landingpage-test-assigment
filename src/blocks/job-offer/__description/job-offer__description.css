@@ -1,0 +1,15 @@
+.job-offer__description {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #fff;
+    opacity: 0.6;
+    margin: 0;
+    max-width: 460px;
+}
+
+@media (max-width: 768px) {
+    .job-offer__description {
+        padding: 0 20px;
+    }
+}

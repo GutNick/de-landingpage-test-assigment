@@ -1,0 +1,9 @@
+.job-offer__information {
+    margin-right: 180px;
+}
+
+@media (max-width: 1120px) {
+    .job-offer__information {
+        margin: 0 0 40px;
+    }
+}

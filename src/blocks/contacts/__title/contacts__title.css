@@ -1,0 +1,17 @@
+.contacts__title {
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 0 33px;
+    padding-left: 63px;
+    position: relative;
+}
+.contacts__title::before {
+    content: url("../../../images/logo_footer.svg");
+    position: absolute;
+    transform: translate(-50%);
+    left: 24px;
+    height: 48px;
+}

@@ -1,0 +1,17 @@
+.footer__background {
+    position: absolute;
+    width: calc(100% - 96px);
+    margin-right: 96px;
+    height: 100%;
+    background: #316099;
+    border-radius: 0 200px 0 0;
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+    .footer__background {
+        width: 100%;
+        border-radius: 0;
+        margin-right: 0;
+    }
+}

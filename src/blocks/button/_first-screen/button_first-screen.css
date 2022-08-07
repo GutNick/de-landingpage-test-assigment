@@ -1,0 +1,9 @@
+.button_first-screen {
+    margin: 71px 213px 190px;
+}
+
+@media (max-width: 768px) {
+    .button_first-screen {
+        margin: 60px auto 90px;
+    }
+}

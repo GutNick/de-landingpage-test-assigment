@@ -1,0 +1,15 @@
+.footer__bottom-content {
+    width: 100%;
+    max-width: 940px;
+    display: flex;
+    margin: 96px auto 64px;
+    z-index: 1;
+}
+
+@media (max-width: 1120px) {
+    .footer__bottom-content {
+        flex-direction: column;
+        width: fit-content;
+        margin: 96px auto 34px;
+    }
+}

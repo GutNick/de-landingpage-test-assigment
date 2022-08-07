@@ -1,0 +1,26 @@
+.hww__title {
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #316099;
+    position: absolute;
+    max-width: 358px;
+    left: 0;
+    margin: 0;
+}
+
+@media (max-width: 1120px) {
+    .hww__title {
+        position: static;
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hww__title {
+        width: 80%;
+    }
+}

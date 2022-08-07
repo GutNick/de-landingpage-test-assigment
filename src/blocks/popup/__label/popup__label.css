@@ -1,0 +1,8 @@
+.popup__label {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.8;
+    margin: 0 0 8px;
+}

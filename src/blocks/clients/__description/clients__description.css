@@ -1,0 +1,17 @@
+.clients__description {
+    width: 100%;
+    max-width: 540px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #fff;
+    opacity: 0.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .clients__description {
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+}
