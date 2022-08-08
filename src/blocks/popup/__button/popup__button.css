@@ -13,3 +13,7 @@
     cursor: pointer;
     margin-top: 36px;
 }
+
+.popup__button:disabled {
+    background: #c7c7c7;
+}
