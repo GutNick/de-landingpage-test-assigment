@@ -72,3 +72,5 @@
 @import '../blocks/popup/__error/popup__error.css';
 @import '../blocks/popup/__button/popup__button.css';
 @import '../blocks/popup/__button-close/popup__button-close.css';
+@import '../blocks/popup/__success/popup__success.css';
+@import '../blocks/popup/__type/_hide/popup__type_hide.css';
