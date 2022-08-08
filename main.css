@@ -70,6 +70,6 @@
 .popup__field_message{box-sizing:border-box;height:144px;resize:none}
 .popup__input-error{border:1px solid red}
 .popup__error{color:red;margin:16px 0}
-.popup__button{background:#5a98d0;border:none;border-radius:10px;box-shadow:5px 20px 50px rgba(16,112,177,.2);color:#fff;cursor:pointer;font-size:16px;font-weight:700;height:72px;letter-spacing:.04em;line-height:26px;margin-top:36px;text-align:center}
+.popup__button{background:#5a98d0;border:none;border-radius:10px;box-shadow:5px 20px 50px rgba(16,112,177,.2);color:#fff;cursor:pointer;font-size:16px;font-weight:700;height:72px;letter-spacing:.04em;line-height:26px;margin-top:36px;text-align:center}.popup__button:disabled{background:#c7c7c7}
 .popup__button-close{background-color:#fff;background-image:url(e6eaa33160cca90cde7c.svg);border:none;cursor:pointer;height:20px;position:absolute;right:40px;top:40px;width:20px}
 
