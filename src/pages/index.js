@@ -17,7 +17,7 @@ function importAll(r) {
 
 importAll(require.context('../blocks/', true, /\.css$/));
 
-const popupWithFormProfile = new PopupWithForm(bodyBlock, contactUsPopup, formPopupContactUs);
+const popupWithFormProfile = new PopupWithForm(bodyBlock, contactUsPopup, formPopupContactUs, config);
 popupWithFormProfile.setEventListeners();
 
 const validationFormContactUs = new FormValidator(config, formPopupContactUs);
