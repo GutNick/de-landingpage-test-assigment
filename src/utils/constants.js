@@ -1,10 +1,10 @@
-export const contactUsPopup = document.querySelector('.popup_contact-us');
-export const buttonOpenContactUsPopup = document.querySelector('.job-offer__button');
+export const bodyBlock = document.querySelector('#root');
+export const contactUsPopup = document.querySelector('#popup_contact-us');
+export const buttonOpenContactUsPopup = document.querySelector('#job-offer__button');
 export const formPopupContactUs = contactUsPopup.querySelector('.popup__form');
-export const formContactUsSubmit = contactUsPopup.querySelector('.popup__button');
 
 export const config = {
   inputSelector: '.popup__field',
-  submitButtonSelector: '.popup__button',
+  submitButtonSelector: 'button[type="submit"]',
   inputErrorClass: 'popup__input-error',
 }

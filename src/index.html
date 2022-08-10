@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Afrianska</title>
 </head>
-<body class="root">
+<body id="root" class="root">
 <header class="header">
   <div class="header__menu">
     <a href="/" class="header__link"><img src="<%=require('./images/logo.svg')%>" alt="Logo" class="header__logo"></a>
@@ -88,7 +88,7 @@
           tempor
           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
       </div>
-      <button class="button job-offer__button">Let’s Talk</button>
+      <button id="job-offer__button" class="button job-offer__button">Let’s Talk</button>
     </div>
   </div>
   <div class="footer__break-line"></div>
@@ -130,7 +130,7 @@
     </div>
   </div>
 </footer>
-<div class="popup popup_contact-us">
+<div id="popup_contact-us" class="popup popup_contact-us popup__type_hide">
   <div class="popup__container">
     <p class="popup__title">SEND US MESSAGE</p>
     <form class="popup__form" name="form-contact-us" novalidate>

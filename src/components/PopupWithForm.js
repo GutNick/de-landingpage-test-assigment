@@ -1,8 +1,8 @@
 import Popup from "./Popup.js";
 
 export default class PopupWithForm extends Popup {
-    constructor(popup, form) {
-        super(popup);
+    constructor(body, popup, form) {
+        super(body, popup);
         this._inputList = this._popup.querySelectorAll('.popup__field');
         this._formPopup =  form;
         this._successMessage = this._popup.querySelector('.popup__success');
@@ -15,7 +15,7 @@ export default class PopupWithForm extends Popup {
     close() {
         this._formPopup.reset();
         super.close();
-        this.showSuccessMessage();
+        this.hideSuccessMessage();
     }
 
     getData() {
@@ -27,7 +27,12 @@ export default class PopupWithForm extends Popup {
     }
 
     showSuccessMessage() {
-        this._formPopup.classList.toggle('popup__type_hide');
-        this._successMessage.classList.toggle('popup__type_hide');
+        this._formPopup.classList.add('popup__type_hide');
+        this._successMessage.classList.remove('popup__type_hide');
+    }
+
+    hideSuccessMessage() {
+        this._formPopup.classList.remove('popup__type_hide');
+        this._successMessage.classList.add('popup__type_hide');
     }
 }

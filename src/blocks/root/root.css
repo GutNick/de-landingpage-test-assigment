@@ -1,3 +1,7 @@
 .root {
     font-family: 'Gilroy', Arial, sans-serif;
 }
+
+.root_fixed {
+    overflow-y: hidden;
+}

@@ -27,7 +27,7 @@ export default class FormValidator {
             if (inputElement.classList.contains('popup__field_required')) {
                 inputElement.required = true;
             }
-            inputElement.addEventListener('input', (evt) => {
+            inputElement.addEventListener('change', (evt) => {
                 this._handleFieldValidation(evt, this._inputErrorClass);
             })
         });
@@ -52,6 +52,7 @@ export default class FormValidator {
 
     resetValidation() {
         this._inputList.forEach((inputElement) => {
+            inputElement.classList.remove(this._inputErrorClass);
             const elementError = this._formElement.querySelector(`#${inputElement.id}-error`);
             elementError.textContent = '';
         });

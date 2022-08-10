@@ -1,16 +1,23 @@
-import './index.css';
+import '../vendor/normalize.css';
 import {
+    bodyBlock,
     contactUsPopup,
     buttonOpenContactUsPopup,
     formPopupContactUs,
-    formContactUsSubmit,
     config,
 } from '../utils/constants.js';
 import FormValidator from '../components/FormValidator.js';
 import PopupWithForm from '../components/PopupWithForm.js';
-import FetchFromData from '../components/FetchFromData';
+import FetchFromData from '../components/FetchFromData'
 
-const popupWithFormProfile = new PopupWithForm(contactUsPopup, formPopupContactUs);
+//Не думаю, что это тянет на автоматизированный сбор стилей. Но другое оптимальное решение я не нашел. Так что надеюсь на ответ в ревью.
+function importAll(r) {
+    r.keys().forEach(r);
+}
+
+importAll(require.context('../blocks/', true, /\.css$/));
+
+const popupWithFormProfile = new PopupWithForm(bodyBlock, contactUsPopup, formPopupContactUs);
 popupWithFormProfile.setEventListeners();
 
 const validationFormContactUs = new FormValidator(config, formPopupContactUs);
@@ -28,7 +35,7 @@ formPopupContactUs.addEventListener('submit', fetchData);
 
 function fetchData(e) {
     e.preventDefault()
-    const { data } = popupWithFormProfile.getData();
-    fetchFormContactUs.fetchToServer({ data });
+    const data = popupWithFormProfile.getData();
+    fetchFormContactUs.fetchToServer(data);
     popupWithFormProfile.showSuccessMessage();
 }

@@ -1,17 +1,22 @@
 export default class Popup {
-    constructor(popup) {
+    constructor(body, popup) {
         this._popup = popup;
         this._handleEscClose = this._handleEscClose.bind(this);
+        this.bodyBlock = body;
     }
 
     open() {
-        this._popup.classList.add('popup_opened');
+        this._popup.classList.add('popup__type_opened');
+        this._popup.classList.remove('popup__type_hide');
         document.addEventListener('keydown', this._handleEscClose);
+        this.bodyBlock.classList.add('root_fixed');
     }
 
     close() {
-        this._popup.classList.remove('popup_opened');
+        this._popup.classList.remove('popup__type_opened');
+        this._popup.classList.add('popup__type_hide');
         document.removeEventListener('keydown', this._handleEscClose);
+        this.bodyBlock.classList.remove('root_fixed');
     }
 
     _handleEscClose(evt) {
