@@ -6,17 +6,21 @@ export default class Popup {
     }
 
     open() {
-        this._popup.classList.add('popup__type_opened');
-        this._popup.classList.remove('popup__type_hide');
-        document.addEventListener('keydown', this._handleEscClose);
-        this.bodyBlock.classList.add('root_fixed');
+        if (this._popup) {
+            this._popup.classList.add('popup__type_opened');
+            this._popup.classList.remove('popup__type_hide');
+            document.addEventListener('keydown', this._handleEscClose);
+            this.bodyBlock.classList.add('root_fixed');
+        }
     }
 
     close() {
-        this._popup.classList.remove('popup__type_opened');
-        this._popup.classList.add('popup__type_hide');
-        document.removeEventListener('keydown', this._handleEscClose);
-        this.bodyBlock.classList.remove('root_fixed');
+        if (this._popup) {
+            this._popup.classList.remove('popup__type_opened');
+            this._popup.classList.add('popup__type_hide');
+            document.removeEventListener('keydown', this._handleEscClose);
+            this.bodyBlock.classList.remove('root_fixed');
+        }
     }
 
     _handleEscClose(evt) {
@@ -32,8 +36,10 @@ export default class Popup {
     }
 
     setEventListeners() {
-        this._popup.addEventListener('click', (evt) => {
-            this._handleOverlayClick(evt)
-        })
+        if (this._popup) {
+            this._popup.addEventListener('click', (evt) => {
+                this._handleOverlayClick(evt)
+            })
+        }
     }
 }

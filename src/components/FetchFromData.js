@@ -16,14 +16,16 @@ export default class FetchFromData {
     }
 
     fetchToServer (data) {
-        return fetch(this._url, {
-            method: 'POST',
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ data }),
-        })
-            .then(this._handleRes)
-            .catch((err) => console.log(`Error: ${err}`));
+        if (Object.keys(data).length !== 0) {
+            return fetch(this._url, {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ data }),
+            })
+                .then(this._handleRes)
+                .catch((err) => console.log(`Error: ${err}`));
+        }
     }
 }

@@ -31,7 +31,9 @@ buttonOpenContactUsPopup.addEventListener('click', () => {
     popupWithFormProfile.open();
 });
 
-formPopupContactUs.addEventListener('submit', fetchData);
+if (formPopupContactUs) {
+    formPopupContactUs.addEventListener('submit', fetchData);
+}
 
 function fetchData(e) {
     e.preventDefault()

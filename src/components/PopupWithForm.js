@@ -14,26 +14,34 @@ export default class PopupWithForm extends Popup {
     }
 
     close() {
-        this._formPopup.reset();
+        if (this._formPopup) {
+            this._formPopup.reset();
+            this.hideSuccessMessage();
+        }
         super.close();
-        this.hideSuccessMessage();
     }
 
     getData() {
         let data = {};
-        this._inputList.forEach((input) => {
-            data[`${input.name}`] = input.value;
-        })
+        if (this._inputList.length > 0) {
+            this._inputList.forEach((input) => {
+                data[`${input.name}`] = input.value;
+            })
+        }
         return data;
     }
 
     showSuccessMessage() {
-        this._formPopup.classList.add('popup__type_hide');
-        this._successMessage.classList.remove('popup__type_hide');
+        if (this._formPopup && this._successMessage) {
+            this._formPopup.classList.add('popup__type_hide');
+            this._successMessage.classList.remove('popup__type_hide');
+        }
     }
 
     hideSuccessMessage() {
-        this._formPopup.classList.remove('popup__type_hide');
-        this._successMessage.classList.add('popup__type_hide');
+        if (this._formPopup && this._successMessage) {
+            this._formPopup.classList.remove('popup__type_hide');
+            this._successMessage.classList.add('popup__type_hide');
+        }
     }
 }
